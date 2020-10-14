@@ -1,0 +1,54 @@
+/*
+ *  Copyright (c) 2018-present, Evgeny Nadymov
+ *
+ * This source code is licensed under the GPL v.3.0 license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+.search-input {
+    height: 28px;
+    overflow: hidden;
+    flex-grow: 1;
+    flex-shrink: 1;
+    position: relative;
+}
+
+.page-small .search-input {
+    display: none;
+}
+
+[contenteditable='true']#search-inputbox {
+    white-space: nowrap;
+    overflow: hidden;
+}
+[contenteditable='true']#search-inputbox br {
+    display: none;
+}
+[contenteditable='true']#search-inputbox * {
+    display: inline;
+    white-space: nowrap;
+}
+
+.search-input-icon {
+    position: absolute;
+    left: 26px;
+    top: 18px;
+    color: var(--search-input-icon);
+}
+
+.animated-wrap-panel .search-input {
+    margin: 4px;
+}
+
+.animated-wrap-panel #search-inputbox {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 6px 0;
+    min-width: 100px;
+}
+
+.animated-wrap-panel .search-input-icon {
+    display: none;
+}

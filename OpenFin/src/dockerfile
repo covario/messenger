@@ -1,0 +1,9 @@
+# escape=`
+FROM node:12.18.2-alpine as nodebuild
+WORKDIR /app
+COPY . .
+RUN npm install
+RUN npm run build
+
+FROM nodebuild as noderun
+RUN npm run dev

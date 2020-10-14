@@ -1,0 +1,15 @@
+@use '../base';
+
+.input,
+input {
+  &[type="text"],
+  &[type="password"] {
+    @include base.typography-san-francisco;
+
+    padding: 5px 8px;
+    border-radius: 0;
+    border: 0;
+    background-color: base.$color-mercury;
+    color: base.$color-moon;
+  }
+}

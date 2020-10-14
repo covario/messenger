@@ -1,0 +1,20 @@
+@use '../base';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: base.$color-moon;
+  padding: 0;
+  margin: 0;
+}
+
+#__next-prerender-indicator,
+#__next-build-watcher {
+  display: none;
+}

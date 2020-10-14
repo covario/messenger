@@ -1,0 +1,44 @@
+.dialog-meta {
+  $this: &;
+
+  white-space: nowrap;
+  color: var(--dialog-meta-color);
+
+  .dialog--active-context & {
+    display: none;
+  }
+
+  .dialog--item-selected & {
+    color: var(--color-neptune);
+  }
+
+  .dialog:hover &,
+  .dialog--active-context & {
+    display: none;
+  }
+
+  .status {
+    color: var(--dialog-meta-read-color);
+  }
+
+  &__kebob {
+    display: none;
+    color: #b7b7b7;
+    height: 100%;
+
+    .dialog--active-context & {
+      display: flex;
+    }
+
+    .dialog:hover &,
+    .dialog--active-context:not(.dialog--item-selected) & {
+      display: flex;
+      background: #5c5c5c;
+    }
+
+    .dialog--item-selected:hover &,
+    .dialog--active-context & {
+      background: #dedede;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.filters {
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px;
+  position: relative;
+
+  .filter {
+    align-items: center;
+    background-color: #5d5d5d;
+    color: #bebebe;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-right: 4px;
+    padding: 4px 8px;
+    user-select: none;
+    white-space: nowrap;
+
+    &:hover {
+      background: var(--color-hover);
+    }
+
+    &.item-selected {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+
+  .page-small .filter {
+    padding: 0 9px;
+  }
+}

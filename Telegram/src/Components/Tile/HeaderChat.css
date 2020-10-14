@@ -1,0 +1,23 @@
+/*
+ *  Copyright (c) 2018-present, Evgeny Nadymov
+ *
+ * This source code is licensed under the GPL v.3.0 license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+.header-chat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+.header-chat-content {
+    align-items: baseline;
+    display: flex;
+    overflow: hidden;
+}
+
+.header-chat-content .header-chat-subtitle {
+    margin-left: 5px;
+}

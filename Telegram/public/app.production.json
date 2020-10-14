@@ -1,0 +1,30 @@
+{
+  "startup_app": {
+    "name": "Covario Telegram application",
+    "url": "https://messenger.covar.io/telegram/index.html",
+    "icon": "https://messenger.covar.io/telegram/favicon.ico",
+    "taskbarIcon": "https://messenger.covar.io/telegram/favicon.ico",
+    "frame": false,
+    "autoShow": true,
+    "defaultWidth": 1000,
+    "defaultHeight": 1000,
+    "defaultCentered": true,
+    "shadow": true,
+    "uuid": "4f6b4434-39da-4744-bb5c-a92f95b54294"
+  },
+  "shortcut": {
+    "company": "Covario",
+    "icon": "https://messenger.covar.io/telegram/favicon.ico",
+    "name": "Covario Telegram application",
+    "description": "Covario Telegram application",
+    "target": [
+      "start-menu",
+      "desktop"
+    ],
+    "force": true,
+    "uninstall-shortcut": false
+  },
+  "runtime": {
+    "version": "16.83.52.32"
+  }
+}

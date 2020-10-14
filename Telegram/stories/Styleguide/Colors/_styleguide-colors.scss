@@ -1,0 +1,49 @@
+@use 'sass:meta';
+@use 'sass:color';
+@use '../../../src/styles/variables/colors';
+@use '../../../src/styles/base';
+
+.styleguide-colors {
+  &__group {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  &__title {
+    background: rgba(white, .1);
+    border-bottom: 1px solid rgba(white, .2);
+    color: rgba(white, .4);
+    font: 15px 'IBM Plex Sans', sans-serif;
+    margin: 0;
+    padding: 0.5rem 0.5rem 0.2rem;
+  }
+
+  &__colors {
+    display: flex;
+  }
+
+  &__color {
+    font: 13px 'IBM Plex Sans', sans-serif;
+    height: 150px;
+    padding: 5px;
+    width: 20%;
+
+    &:before,
+    & > p {
+      display: block;
+      margin: 5px;
+    }
+  }
+
+  @each $key, $value in meta.module-variables('colors') {
+    &__color--#{$key} {
+      background-color: $value;
+      color: if(color.lightness($value) > 37, black, white);
+
+      // &:before {
+      //   content: 'Lightness: #{color.lightness($value)}';
+      // }
+    }
+  }
+}

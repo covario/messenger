@@ -1,0 +1,43 @@
+@use '../../styles/base';
+
+.chat-message {
+
+  $this: &;
+
+  &--pre-message {
+    #{$this}__name,
+    #{$this}__date,
+    #{$this}__content {
+      color: base.$color-neptune !important;
+    }
+  }
+
+  &__header {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+
+  &__name {
+    @include base.typography-san-francisco;
+
+    color: base.$color-mercury;
+    margin: 0;
+
+  }
+
+  &__date {
+    @include base.typography-houston;
+
+    color: rgba(base.$color-sun, base.$opacity-sirius);
+    margin: 0;
+  }
+
+  &__content {
+    @include base.typography-san-francisco;
+
+    color: base.$color-sun;
+    margin: 0;
+  }
+}

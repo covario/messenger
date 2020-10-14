@@ -1,0 +1,42 @@
+$sun: #fff;
+$moon: #000;
+
+$mercury: #ff9826;
+$mercury-secondary: #ffc981;
+$mercury-tertiary:#aa5211;
+
+$venus: #00b10a;
+$venus-secondary: #00ff0e;
+$venus-tertiary: #009422;
+
+$earth: #ff0900;
+$earth-secondary: #ff563f;
+$earth-tertiary: #db000a;
+
+$mars: #408dff;
+$jupiter: #ff0097;
+
+$saturn: #242424;
+$uranus: #343434;
+$neptune: #5d5d5d;
+$pluto: #dedede;
+$proxima: #999;
+
+// intent color palette
+$primary__color: $sun;
+$primary__background: $venus;
+
+$secondary__color: #999;
+$secondary__background: #373737;
+
+$tertiary__color: #8c8c8c;
+$tertiary__background: #5d5d5d;
+
+$success__color: $sun;
+$success__background: $mercury;
+
+$warning__color: $sun;
+$warning__background: #ff7700;
+
+$danger__color: $sun;
+$danger__background: #ff0000;
