@@ -1,0 +1,110 @@
+/*
+ *  Copyright (c) 2018-present, Evgeny Nadymov
+ *
+ * This source code is licensed under the GPL v.3.0 license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+.dialog-badge {
+
+  $this: &;
+
+  font-size: 14px;
+  line-height: normal;
+  padding: 0 6px;
+  min-width: 24px;
+  min-height: 24px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: -3px;
+  margin-left: 6px;
+  font-weight: 500;
+  color: #000;
+  background: var(--color-accent-main);
+  vertical-align: baseline;
+  white-space: nowrap;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .dialog:hover:not(.dialog--item-selected) & {
+      background: #5c5c5c;
+  }
+
+  .dialog--item-selected & {
+    background: #d7d7d7;
+    color: #5d5d5d;
+  }
+
+  .dialog-badge-muted {
+    background: var(--badge-muted);
+  }
+
+}
+
+.dialog-badge-mention {
+  min-width: 24px;
+  transform: translateY(-1px);
+  margin: 0 -6px;
+}
+
+.dialog-badge-pinned {
+  border-radius: 12px;
+  margin-top: -3px;
+  margin-left: 6px;
+  color: #b7b7b7;
+  background: var(--badge-unmuted);
+  vertical-align: baseline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .page-small & {
+    display: none;
+  }
+
+  .dialog--item-selected & {
+    background: #d7d7d7;
+    color: #5d5d5d;
+  }
+
+  .dialog:hover:not(.dialog--item-selected) & {
+    background: #5c5c5c;
+  }
+
+}
+
+.page-small .dialog-badge,
+.page-small .dialog-badge-pinned,
+.page-small .dialog-badge-unread {
+  margin: 0;
+  position: absolute;
+  right: 9px;
+  bottom: 9px;
+}
+
+.dialog-badge-pinned-icon {
+  stroke: currentColor;
+  font-size: 24px;
+}
+
+.dialog-badge-unread {
+  display: inline-block;
+  float: right;
+  width: 8px;
+  height: 8px;
+  overflow: hidden;
+  margin: 3px 0 0;
+  min-width: 8px;
+  transform: translateY(3px);
+  background: var(--color-accent-light);
+}
+
+.dialog-badge-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6px;
+  height: 48px;
+}

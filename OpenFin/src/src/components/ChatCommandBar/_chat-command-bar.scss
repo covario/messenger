@@ -1,0 +1,28 @@
+@use '../../styles/base';
+
+.chat-command-bar {
+  display: block;
+  width: 100%;
+
+  &__form {
+    display: flex;
+    width: 100%;
+  }
+
+  &__message-input {
+    // Temporary importants, these will go away when
+    // the input has real styles associated with it.
+    background-color: base.$color-uranus !important;
+    color: base.$color-sun !important;
+    flex: 1;
+
+    &::placeholder {
+      color: base.$color-sun;
+      opacity: 0.6;
+    }
+  }
+
+  &__send-button {
+    flex: 0;
+  }
+}

@@ -1,0 +1,21 @@
+@use '../../styles/base';
+
+.app-header {
+  $height: 30px;
+
+  @include base.typography-san-francisco;
+
+  background-color: base.$color-moon;
+  padding: 0 .4rem;
+  height: $height;
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    fill: base.$color-sun;
+    height: $height;
+    margin: 0;
+    opacity: base.$opacity-canopus;
+    width: 100px;
+  }
+}

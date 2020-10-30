@@ -1,0 +1,30 @@
+/*
+ *  Copyright (c) 2018-present, Evgeny Nadymov
+ *
+ * This source code is licensed under the GPL v.3.0 license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+.inputbox-header {
+    align-items: center;
+    background-color: var(--background-paper);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.inputbox-header-left-column {
+
+}
+
+.inputbox-header-middle-column {
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: hidden;
+}
+
+.inputbox-header-right-column {
+    min-width: 54px;
+}

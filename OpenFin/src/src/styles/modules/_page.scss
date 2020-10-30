@@ -1,0 +1,19 @@
+@use '../../styles/base';
+
+.page {
+  &--chat {
+    @include base.typography-san-francisco;
+
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chat-page {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+  }
+}

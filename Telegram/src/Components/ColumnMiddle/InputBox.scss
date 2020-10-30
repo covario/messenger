@@ -1,0 +1,42 @@
+/*
+ *  Copyright (c) 2018-present, Evgeny Nadymov
+ *
+ * This source code is licensed under the GPL v.3.0 license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+.inputbox {
+  position: relative;
+
+  &__input-wrapper {
+    display: flex;
+  }
+
+  &__emoji-picker {
+    flex: 0;
+
+    .MuiButton-root {
+      height: 100%;
+    }
+  }
+
+  &__attach-wrapper {
+    flex: 0;
+
+    .attach-button {
+      height: 100%;
+    }
+
+    .MuiButton-root {
+      height: 100%;
+    }
+  }
+
+  &__send {
+    flex: 0 0 150px;
+  }
+}
+
+.inputbox-attach-button {
+  display: none;
+}

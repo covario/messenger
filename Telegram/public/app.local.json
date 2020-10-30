@@ -1,0 +1,33 @@
+{
+  "devtools_port": 9090,
+  "startup_app": {
+    "icon": "http://localhost:3000/telegram/favicon.ico",
+    "taskbarIcon": "http://localhost:3000/telegram/favicon.icon",
+    "name": "Covario Chat Application",
+    "url": "http://localhost:3000/telegram/",
+    "uuid": "covario-chat-app-123",
+    "autoShow": true,
+    "defaultWidth": 1000,
+    "defaultHeight": 1000,
+    "minWidth": 1000,
+    "defaultCentered": true,
+    "contextMenu": true,
+    "frame": false,
+    "saveWindowState": false,
+    "shadow": true
+  },
+  "shortcut": {
+    "company": "Covario",
+    "icon": "http://localhost:3000/telegram/favicon.ico",
+    "name": "Covario Chat App",
+    "description": "Covario Chat Application",
+    "target": [
+      "start-menu"
+    ],
+    "uninstall-shortcut": false
+  },
+  "runtime": {
+    "arguments": "--disable-web-security",
+    "version": "16.83.51.26"
+  }
+}

@@ -1,0 +1,29 @@
+@mixin atlanta {
+  font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+@mixin chicago {
+  font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+@mixin new-york {
+  font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+@mixin san-francisco {
+  font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+@mixin houston {
+  font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+  font-weight: 400;
+  font-size: .8rem;
+}

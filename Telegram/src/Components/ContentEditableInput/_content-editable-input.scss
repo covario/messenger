@@ -1,0 +1,44 @@
+.content-editable-input {
+  -webkit-overflow-scrolling: touch;
+  background-color: var(--background);
+  flex: 1 1 auto;
+  max-height: 150px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 10px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  word-wrap: break-word;
+  transition: background-color .03s ease-in-out;
+
+  .search-input & {
+    padding: 6px;
+  }
+
+  &::before {
+    color: #8e9396;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(20px);
+    transition: opacity 0.15s ease-out, transform 0.15s ease-out;
+    will-change: transform;
+  }
+
+  &:empty::before {
+    content: attr(placeholder);
+    opacity: 0.75;
+    transform: translateX(0px);
+  }
+
+  &:empty:active::before,
+  &:empty:focus::before {
+    opacity: 0.75;
+  }
+
+  &:focus {
+    background-color: var(--background-paper);
+    border: 0;
+    box-shadow: 0 0 0 0;
+    outline: none;
+  }
+}

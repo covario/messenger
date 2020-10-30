@@ -1,0 +1,86 @@
+.dialog {
+  $this: &;
+
+  cursor: pointer;
+  position: relative;
+  border-bottom: 1px solid #5d5d5d;
+
+  &:hover,
+  &--active-context {
+    background: var(--color-hover);
+
+    .online-status-icon {
+      background: var(--color-hover);
+    }
+  }
+
+  &--item-selected,
+  &--item-selected:hover {
+    background: #fff;
+
+    .online-status-icon {
+      background: var(--color-hover);
+    }
+  }
+
+  &__hidden {
+    opacity: 0.15;
+    pointer-events: none;
+  }
+
+  .dialog-tile {
+    height: 48px;
+    position: relative;
+  }
+
+  .dialog-bottom-separator {
+    background: var(--border);
+    height: 1px;
+    margin: 6px -9px;
+  }
+
+  .tile-first-row {
+    display: flex;
+    align-items: center;
+    height: 20px;
+  }
+
+  .tile-second-row {
+    margin: 8px 0 0 0;
+    display: flex;
+  }
+
+  @at-root .chat-big {
+    .chat-inner-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      box-sizing: border-box;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  }
+
+  @at-root .chat-big {
+    .tile-first-row {
+      max-width: 100%;
+    }
+  }
+
+  .dialog-inner-wrapper {
+    overflow: hidden;
+    flex-grow: 1;
+    padding: 8px;
+    z-index: 1;
+  }
+
+  .dialog-wrapper {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+}

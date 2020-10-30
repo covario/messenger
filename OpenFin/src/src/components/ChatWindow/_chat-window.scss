@@ -1,0 +1,37 @@
+@use '../../styles/base';
+
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__header {
+    background-color: base.$color-uranus;
+    flex: 0 0;
+    padding: .2rem .6rem .3rem;
+  }
+
+  &__title {
+    @include base.typography-new-york;
+
+    color: base.$color-sun;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__messages {
+    flex: 1;
+    overflow: auto;
+    padding: .3rem .6rem 1rem;
+
+    .chat-message {
+      padding: .5rem 0;
+    }
+  }
+
+  .chat-command-bar {
+    flex: 0 0;
+  }
+}

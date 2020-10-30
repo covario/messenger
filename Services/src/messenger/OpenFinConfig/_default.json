@@ -1,0 +1,34 @@
+﻿{
+  "startup_app": {
+    "name": "Covario {application}",
+    "url": "https://messenger.covar.io/{application}/index.html",
+    "icon": "https://messenger.covar.io/{application}/favicon.ico",
+    "taskbarIcon": "https://messenger.covar.io/{application}/favicon.ico",
+    "frame": false,
+    "autoShow": true,
+    "defaultWidth": 1000,
+    "defaultHeight": 1000,
+    "minWidth": 1000,
+    "defaultCentered": true,
+    "contextMenu": true,
+    "shadow": true,
+    "uuid": "4f6b4434-39da-4744-bb5c-a92f95b54294{application}",
+    "enableAppLogging": true
+  },
+  "shortcut": {
+    "company": "Covario",
+    "icon": "https://messenger.covar.io/telegram/favicon.ico",
+    "name": "Covario {application}",
+    "description": "Covario {application}",
+    "target": [
+      "start-menu",
+      "desktop"
+    ],
+    "force": true,
+    "uninstall-shortcut": true
+  },
+  "runtime": {
+    "arguments": "--v=1 --diagnostics --log-net-log=%localappdata%\\OpenFin\\logs\\net-log.json --net-log-capture-mode=IncludeCookiesAndCredentials --net-log-capture-mode=IncludeSocketBytes",
+    "version": "16.83.52.32"
+  }
+}

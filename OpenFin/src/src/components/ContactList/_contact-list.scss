@@ -1,0 +1,14 @@
+@use '../../styles/base';
+
+.contact-list {
+
+  max-height: 100vh;
+  overflow: auto;
+
+
+  &__not-found {
+    @include base.typography-san-francisco;
+    color: white;
+  }
+
+}

@@ -1,0 +1,64 @@
+@use '../../styles/base';
+
+.contact-list-item {
+  $this: &;
+
+  @include base.typography-san-francisco;
+
+  display: flex;
+  flex-direction: column;
+  color: base.$color-sun;
+  transition-property: background-color;
+  transition: 0.1s ease-in-out;
+  border: 1px solid base.$color-neptune;
+
+  & > * {
+    display: flex;
+    padding: .8rem .8rem 0 .8rem;
+
+    & > * {
+      flex-grow: 1;
+      display: flex;
+    }
+
+    & > *:last-child {
+      justify-content: flex-end;
+    }
+
+    &:last-child {
+      padding-bottom: .8rem;
+    }
+
+  }
+
+  &__cell {
+    align-items: center;
+  }
+
+  &:hover {
+    background-color: base.$color-sun;
+    color: base.$color-moon;
+  }
+
+  // TODO: probably a better way to write this. let's discuss with Brian
+  &:hover &__unread {
+    color: base.$color-neptune;
+    background-color: base.$color-pluto;
+  }
+
+  &__timestamp {
+    color: base.$color-neptune;
+  }
+
+  &__unread {
+    display: block;
+    padding: .1rem .3rem;
+    color: base.$color-pluto;
+    background-color: base.$color-uranus;
+  }
+
+  &__status {
+    color: base.$color-mercury;
+  }
+
+}
